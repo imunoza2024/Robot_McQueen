@@ -25,7 +25,11 @@ Problemas:
 
   La decisión de cuanto girar es completamente aleatoria, eficaz para evitar bucles; pero, a su vez, en cada ejecución será diferente.
 
-Para realizar mi práctica, inicialmente seguí el algoritmo Dash, en donde fijo una dirección para que avance.
+Para realizar mi práctica, inicialmente seguí el algoritmo Dash, en donde fijo una dirección para que avance. Observé que era un programa demasiado básico y no cumplía bien con sus funciones. Conseguí que como máximo limpiase un 22% de la casa.
+
+Utilizar únicamente un algoritmo de espiral tampoco era factible ya que muchas veces volvía a empezar el trabajo en una zona parcialmente limpia. Aunque tuvo mejores resultados que el primero, solo limpión el 30%, un porcentaje todavía bastante bajo.
+
+Al final la mejor opción ha sido implementar una mezcla de ambos, donde pueda avanzar, retroceder si se choca, girar, etc. Usando para ello una máquina de estados, además de contabilizar el tiempo en vez de dejarlo dormido para evitar parar el ciclo.
 
 Gracias al láser, evalúo la distancia de los obstáculos y, dependiendo de esta, decido si en cada iteración seguir avanzando o girar.
 
@@ -33,8 +37,20 @@ Gracias al láser, evalúo la distancia de los obstáculos y, dependiendo de est
   Cada medición representa la distancia hasta el obstáculo detectado en esa dirección. La medición situada en el índice 90 corresponde a la dirección frontal del robot.
   <img width="627" height="211" alt="imagen" src="https://github.com/user-attachments/assets/8982f2be-cbe0-4f8e-b5de-ddb4f5c7774a" />
 
+Implementación:
 
-[Grabación de pantalla desde 2026-10-01 12-08-06.webm](https://github.com/user-attachments/assets/e25c098f-d026-4295-9d58-2c43842f4a0e)
+ESPIRAL: El robot ejecuta una trayectoria en espiral incrementando progresivamente la velocidad lineal, manteniendo una velocidad angular constante.
+
+RECTA: Movimiento rectilíneo manteniendo.
+
+PARADA: Al detectar un obstáculo, el robot detiene completamente sus motores.
+
+RETROCESO: Aplica una velocidad lineal negativa 
+
+GIRO: Aplica un giro sobre su propio eje durante un intervalo aleatorio de tiempo.
+
+REAJUSTE: Tras completar el giro, el robot efectúa una breve pausa, reinicia los parámetros de velocidad iniciales.
+
 
 
 Resultado: aunque el algoritmo permite recorrer una parte importante del entorno, no garantiza una cobertura completa, ya que se basa en reacciones. 
