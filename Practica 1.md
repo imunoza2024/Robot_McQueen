@@ -53,6 +53,10 @@ REAJUSTE: Tras completar el giro, el robot efectúa una breve pausa, reinicia lo
 
 
 
+
+https://github.com/user-attachments/assets/21a8f581-dfd4-48b5-b3e1-d3b47c1542c1
+
+
 Resultado: aunque el algoritmo permite recorrer una parte importante del entorno, no garantiza una cobertura completa, ya que se basa en reacciones. 
 El robot no mantiene información explícita de las zonas que ya ha visitado, por lo que puede pasar varias veces por una misma zona mientras deja otras sin explorar.
 
