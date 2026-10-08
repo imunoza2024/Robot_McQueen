@@ -40,7 +40,40 @@ Además añado una velocidad la cual dependiendo de si el trozo de circuito por 
 
     HAL.setV(V)
 
+Para encontrar la línea, en el caso de que la pierda o se desvíe, se le da una velocidad de giro baja hasta que sea capaz de volver a ella. Además, guarda la posición del último lugar donde la vió, izquierda o derecha, para poder actuar consecuentemente a esto y así girar a la derecha o izquierda respctivamente y evitar dar un giro sobre sí mismo innecesario. Si no la ha llegado a ver entonces gira hasta que la encuentre.
+
 **Observaciones a tener en cuenta:**
 
-Al inicio tome como franja unas columnas exactas [213:426], esto provocaba que si el coche se salía de la franja se perdía. La solución fue contar con todas las columnas y la mitad inferior (en horizontal)
+Al inicio tome como franja unas columnas exactas [213:426], esto provocaba que si el coche se salía de la franja se perdía. La solución fue contar con todas las columnas y la mitad inferior (en horizontal). 
+
+A la hora de pasar del coche holonónmico, donde las 4 ruedas giran a la vez; al de Ackermann, donde solo giran las delantera;tuve que cambiar todos los valores de controlador PID y de las velocidades máximas y mínimas. Además con una mínima de 1 para las curvas seguía desviandose en la curva, aunque cuando la acababa conseguía volver solbre la línea roja. Un contra es que al subirle la velocidad se descontrola en seguida.
+
+**Vídeos**
+
+- HOLONÓMICO
+
+  [Circuito simple.webm](https://github.com/user-attachments/assets/80a2f7de-4fff-446b-8423-434cfd41b01c)
+
+  [Montreal.webm](https://github.com/user-attachments/assets/a86bf68d-c7b1-4b23-9aa1-47b026fd0df4)
+
+  [Encontrar linea.webm](https://github.com/user-attachments/assets/0d4ff84e-3ea8-455c-bb6d-3fe47e285144)
+
+- ACKERMANN
+
+  https://github.com/user-attachments/assets/4abc366f-11dd-4fea-b528-a8bb3cbe7ae2
+  
+  [Encontrar Linea Ackermann.webm](https://github.com/user-attachments/assets/538a16b3-8d3a-4659-a5fb-007970a97f6f)
+  
+  Le toma un tiempo estabilizarse pero lo consigue
+
+
+**Conclusión**
+Controlar el modelo de Ackermann es mñas difícil debido a sus limitaciones al girar en comparación con el holonómico. Para solucionar esto hay que ir modificando cada una de las componentes de PID y aún así la velocidad aplicada debe ser menor para que consiga hacer un correcto giro en las curvas.
+
+
+
+  
+
+
+  
 
