@@ -61,6 +61,11 @@ Además con una mínima de 1 para las curvas seguía desviandose en la curva, au
 - HOLONÓMICO
 
   [Circuito simple.webm](https://github.com/user-attachments/assets/80a2f7de-4fff-446b-8423-434cfd41b01c)
+  Con una velocidad adaptativa de entre 2 y 6 el coche tarda casi 2 minutos en dar la vuelta pero apenas oscilas
+
+  [Simple_Rapido.webm](https://github.com/user-attachments/assets/919f1441-ecfc-4012-9f87-c6ed49270d3d)
+  Con una velocidad adaptativa de entre 2 y 11 también completa el circuito. Esta vez en 1 minuto, aunque con mayor oscilación que el anterior, incluso modificando el PID.
+
 
   [Montreal.webm](https://github.com/user-attachments/assets/a86bf68d-c7b1-4b23-9aa1-47b026fd0df4)
 
