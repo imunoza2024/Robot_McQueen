@@ -66,3 +66,18 @@ El ángulo que determinamos se calcula con la tangente de las coordenadas del ve
 -Si el ángulo es próximo a cero, el vector apunta aproximadamente hacia delante.
 
 La velocidad lineal también es adaptativa. Cuando la dirección resultante se encuentra muy desviada del eje frontal, la velocidad lineal se reduce. Así el coche disminuye su velocidad mientras debe realizar un giro pronunciado.
+
+
+
+
+
+
+https://github.com/user-attachments/assets/3f0f8b52-2844-4ef4-bdd4-643c01debe18
+
+
+
+
+https://github.com/user-attachments/assets/e2a3be69-63f5-4a19-918f-a51315561946
+
+
+
