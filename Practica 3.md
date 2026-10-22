@@ -26,7 +26,7 @@ Se pretende conseguir una navegación autónoma que combine el seguimiento de ob
 La navegación conlleva todas las actividades internas que hay que tener en cuenta para llevar el coche de un punto A -> B de forma autónoma sin que choque. 
 
 - La navegación global crea una ruta desde el inicio hasta el destino utilizando el entor, mapas, etc.
-- 
+  
 - La navegación local divide la ruta de la navegación global en objetivos más pequeños donde determinar cómo debe moverse el robot en cada instante teniendo en cuenta su posición actual, el siguiente punto de paso y los obstáculos detectados en su entorno inmediato.
 
   **Implementación**
