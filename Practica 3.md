@@ -52,8 +52,10 @@ El vector de repulsión lo forman la suma de los datos del laser y usaremos el s
 El vector atractivo esta compuesto por las coordenadas relativas del objetivo
 
 El vector resultante es la suma de ambos:
-  avg_x = car_x + K_obs * obs_x
-  avg_y = car_y + K_obs * obs_y
+
+    avg_x = car_x + K_obs * obs_x
+    
+    avg_y = car_y + K_obs * obs_y
 
 El ángulo que determinamos se calcula con la tangente de las coordenadas del vector resultante, así en cada momento sabremos el valor exacto que hay que girar según el entorno al que nos enfretemos. La velocidad angular aumenta proporcionalmente con el error angular.
 
