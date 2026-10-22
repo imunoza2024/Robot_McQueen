@@ -1,6 +1,9 @@
 ## Obstacle Detection
 **Objetivo:** implementar un algoritmo de navegación VFF que guie al coche por todo el circuito sin chocar con los demás coches y que consiga completarlo. 
 
+<img width="427" height="773" alt="Captura desde 2026-10-22 21-15-50" src="https://github.com/user-attachments/assets/0fd275ea-4638-4b61-8f40-63e974f4ecc8" />
+
+
 Esto implica crear:
 - Un vector atractivo desde el coche a los waypoints por los que tiene que ir pasando a lo largo de su recorrido
 
@@ -44,7 +47,7 @@ La navegación conlleva todas las actividades internas que hay que tener en cuen
   - Distancias finitas
   Las que tenemos en cuenta son las finitas ya que nos advierten de un próximo obstáculo, y el resto se descartan por ser inválidas para los calculos de las fuerzas.
 
-El vector de repulsión lo forman la suma de los datos del laser y usaremos el signo negativo para que apunte en la dirección opuesta al obstáculo. La repulsión es inversamente proporcional a la distancia, es decir, a menor distancia, mayor repulsión. 
+El vector de repulsión lo forman la suma de los datos del laser y usaremos el signo negativo para que apunte en la dirección opuesta al obstáculo. La repulsión es inversamente proporcional a la distancia, es decir, a menor distancia, mayor repulsión. Además pondero los pesos según si el obstáculo está de frente o a los lados, ya que un obstáculo como la pared es de menos importancia que uno enfrente
 
 El vector atractivo esta compuesto por las coordenadas relativas del objetivo
 
