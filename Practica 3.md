@@ -71,13 +71,9 @@ La velocidad lineal también es adaptativa. Cuando la dirección resultante se e
 
 
 
-
-https://github.com/user-attachments/assets/3f0f8b52-2844-4ef4-bdd4-643c01debe18
-
+https://github.com/user-attachments/assets/2643595a-e671-4906-af58-e079cb24f9f1
 
 
 
-https://github.com/user-attachments/assets/e2a3be69-63f5-4a19-918f-a51315561946
 
-
-
+https://github.com/user-attachments/assets/aa6afa28-e8b5-4d36-8a8a-35d107401db6
