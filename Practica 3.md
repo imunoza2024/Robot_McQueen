@@ -26,8 +26,14 @@ Se pretende conseguir una navegación autónoma que combine el seguimiento de ob
 La navegación conlleva todas las actividades internas que hay que tener en cuenta para llevar el coche de un punto A -> B de forma autónoma sin que choque. 
 
 - La navegación global crea una ruta desde el inicio hasta el destino utilizando el entor, mapas, etc.
+
+  <img width="1060" height="226" alt="imagen" src="https://github.com/user-attachments/assets/daa342e3-7151-4cf7-93e6-f0cd72445ede" />
+
   
 - La navegación local divide la ruta de la navegación global en objetivos más pequeños donde determinar cómo debe moverse el robot en cada instante teniendo en cuenta su posición actual, el siguiente punto de paso y los obstáculos detectados en su entorno inmediato.
+
+  <img width="517" height="303" alt="imagen" src="https://github.com/user-attachments/assets/94d1e31b-7c92-4ff8-82c7-3562b1a09604" />
+
 
   **Implementación**
 
@@ -68,12 +74,6 @@ El ángulo que determinamos se calcula con la tangente de las coordenadas del ve
 La velocidad lineal también es adaptativa. Cuando la dirección resultante se encuentra muy desviada del eje frontal, la velocidad lineal se reduce. Así el coche disminuye su velocidad mientras debe realizar un giro pronunciado.
 
 
+https://github.com/user-attachments/assets/423ab5fd-6eb6-4bb5-9a07-47b7ccf65c80
 
 
-
-https://github.com/user-attachments/assets/2643595a-e671-4906-af58-e079cb24f9f1
-
-
-
-
-https://github.com/user-attachments/assets/aa6afa28-e8b5-4d36-8a8a-35d107401db6
