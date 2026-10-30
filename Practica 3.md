@@ -39,7 +39,7 @@ La navegación conlleva todas las actividades internas que hay que tener en cuen
 
   Utilizo las funciones absolute2relative y parse_laser_data, proporcionadas en el enunciado, para transformar las coordenadas absolutas del objetivo a coordenadas relativas para el coche; y transformar las medidas del sensor láser en coordenadas cartesianas y polares que son las que utilizaremos para hacer los cálculos posteriores.
 
-  En el bucle primcipal se toman las coordenadas del siguiente objetivo, las cuales con la función absolute2relative tranformaremos a relativas, y las coordenadas del coche en este instante de tiempo.
+  En el bucle principal se toman las coordenadas del siguiente objetivo, las cuales con la función absolute2relative tranformaremos a relativas, y las coordenadas del coche en este instante de tiempo.
 
   Cuando el objetivo esté lo suficientemente cerca se marcará como completado y el coche se pondrá rumbo al siguiente waypoint. Esto se sabe ya que calculamos la distancia gracias a la transformación de las coordenadas del objetivo en relativas porque el centro de referencia es el coche así que con Pitágoras sabremos cómo de lejos está.
 
@@ -51,6 +51,7 @@ La navegación conlleva todas las actividades internas que hay que tener en cuen
   - Distancias infinatas
     
   - Distancias finitas
+    
   Las que tenemos en cuenta son las finitas ya que nos advierten de un próximo obstáculo, y el resto se descartan por ser inválidas para los calculos de las fuerzas.
 
 El vector de repulsión lo forman la suma de los datos del laser y usaremos el signo negativo para que apunte en la dirección opuesta al obstáculo. La repulsión es inversamente proporcional a la distancia, es decir, a menor distancia, mayor repulsión. Además pondero los pesos según si el obstáculo está de frente o a los lados, ya que un obstáculo como la pared es de menos importancia que uno enfrente
@@ -74,6 +75,11 @@ El ángulo que determinamos se calcula con la tangente de las coordenadas del ve
 La velocidad lineal también es adaptativa. Cuando la dirección resultante se encuentra muy desviada del eje frontal, la velocidad lineal se reduce. Así el coche disminuye su velocidad mientras debe realizar un giro pronunciado.
 
 
-https://github.com/user-attachments/assets/423ab5fd-6eb6-4bb5-9a07-47b7ccf65c80
+https://github.com/user-attachments/assets/6761b693-8b87-4128-be44-d7637afa0da8
+
+
+
+https://github.com/user-attachments/assets/71f5b45a-514e-4eb5-8c40-184266467297
+
 
 
