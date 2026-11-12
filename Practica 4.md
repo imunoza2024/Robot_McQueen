@@ -81,3 +81,6 @@ Combinar propagación y penalización da trayectorias más seguras, aunque no se
 
 Dijkstra con cola de prioridad es lo que permite calcular el campo completo
 
+[TeleTaxi.webm](https://github.com/user-attachments/assets/c121f817-ed82-4851-8681-5427b5453cc6)
+
+
